@@ -17,6 +17,5 @@
                                           (str "<h2>Path</h2>")
                                           (str "<pre>" (.-path req) "</pre>")
                                           (str "<h2>Params</h2>")
-                                          (str "<pre>" (js/JSON.stringify (.-params req) nil 2) "</pre>")])
-                                    ))))
+                                          (str "<pre>" (js/JSON.stringify (.-params req) nil 2) "</pre>")])))))
     (.listen 3000 (fn [] (js/console.log "Listening on http://localhost:3000"))))
